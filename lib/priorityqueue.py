@@ -1,6 +1,6 @@
 """
 Module: priorityqueue.py
-Author: Reza Mousavi (reza.mousavii@gmail.com)
+Author: Reza Mousavi
 Date: June 28th, 2023
 
 This module provides classes for managing a priority queue of tasks.
