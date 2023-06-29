@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 """
 Module: priorityqueue_tests.py
-Author: Reza Mousavi (reza.mousavii@gmail.com)
+Author: Reza Mousavi
 Date: June 29, 2023
 
 This module contains unit tests for the PrioQueue class in the priorityqueue module.
