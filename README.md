@@ -50,11 +50,11 @@ To use the priority queue library, follow these steps:
         queue = PrioQueue()
 
 
-- Add new tasks to the queue using the add_new_task method, 
+- Add new tasks to the queue using the enqueue method, 
     providing the command and priority level as arguments: 
         
-        queue.add_new_task("Buy John a Coffee", 1)
-        queue.add_new_task("Write Sarah a letter", 5)
+        queue.enqueue("Buy John a Coffee", 1)
+        queue.enqueue("Write Sarah a letter", 5)
 
 
 -Retrieve the tasks from the queue in the desired order. 
@@ -74,21 +74,34 @@ from lib.priorityqueue import PrioQueue
 queue = PrioQueue()
 
 # Add new tasks
-queue.add_new_task("Buy John a Coffee", 1)
-queue.add_new_task("Write Sarah a letter", 5)
-queue.add_new_task("Walk the dog", 5)
-queue.add_new_task("Go shopping", 0)
+queue.enqueue("Buy John a Coffee", 1)
+queue.enqueue("Write Sarah a letter", 5)
+queue.enqueue("Walk the dog", 5)
+queue.enqueue("Go shopping", 0)
 
 # Print the queue
 print(queue)
 
-===============================
 Output:
 
 Order: 1 - Task: Write Sarah a letter
 Order: 2 - Task: Walk the dog
 Order: 3 - Task: Buy John a Coffee
 Order: 4 - Task: Go shopping
+
+
+===============================
+
+# Process the tasks in the priority queue
+queue.process_tasks()
+
+Expected output:
+
+Processing command: Write Sarah a letter (Priority: 5)
+Processing command: Walk the dog (Priority: 5)
+Processing command: Buy John a Coffee (Priority: 1)
+Processing command: Go shopping (Priority: 0)
+
 ```
 
 
